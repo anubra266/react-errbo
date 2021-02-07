@@ -1,0 +1,8 @@
+/* add css module styles here (optional) */
+
+.errContainer {
+  background: 'white';
+  position: 'fixed';
+  height: '100%';
+  width: '100%';
+}

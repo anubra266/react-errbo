@@ -15,12 +15,15 @@ npm install --save react-errbo
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-errbo'
-import 'react-errbo/dist/index.css'
+import ErrorBoundary from 'react-errbo'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <ErrorBoundary >
+        {undefinedVariable} 
+      </ErrorBoundary>
+    )
   }
 }
 ```

@@ -53,7 +53,6 @@
     "husky": "^6.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-error-overlay": "^6.0.9",
     "size-limit": "^4.10.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
@@ -61,5 +60,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "react-error-overlay": "^6.0.9"
   }
 }

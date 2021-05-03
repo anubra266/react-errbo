@@ -16,10 +16,6 @@ Install react-errbo with npm
   yarn add -D react-errbo
 ```
 
-## Demo
-
-![](./demo.gif)
-
 ## Usage/Examples
 
 ```javascript
@@ -39,3 +35,7 @@ const App = () => {
   );
 };
 ```
+
+## Demo
+
+![](./demo.gif)

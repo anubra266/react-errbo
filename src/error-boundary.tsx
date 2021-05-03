@@ -21,6 +21,7 @@ export default class ErrorBoundary extends Component {
             background: '#383838',
             padding: '15px',
             borderRadius: '5px',
+            display: 'none',
           }}
         >
           <h1 style={{ color: '#FB2C45' }}> Error: {error.message} </h1>

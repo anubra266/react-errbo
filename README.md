@@ -18,7 +18,7 @@ Install react-errbo with npm
 
 ## Demo
 
-Insert gif or link to demo
+![](./demo.gif)
 
 ## Usage/Examples
 

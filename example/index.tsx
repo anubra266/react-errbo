@@ -5,7 +5,7 @@ import ErrorBoundary from '../.';
 
 const App = () => {
   return (
-    <ErrorBoundary onError={() => alert('no')}>
+    <>
       <button
         onClick={() => {
           throw new Error('a');
@@ -13,8 +13,14 @@ const App = () => {
       >
         Throw Error
       </button>
-    </ErrorBoundary>
+      {a}
+    </>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <ErrorBoundary onError={() => alert('no')}>
+    <App />
+  </ErrorBoundary>,
+  document.getElementById('root')
+);

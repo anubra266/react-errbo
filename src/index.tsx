@@ -3,18 +3,19 @@ import {
   startReportingRuntimeErrors,
   stopReportingRuntimeErrors,
 } from 'react-error-overlay';
+import ErrorBoundary from './error-boundary';
 
-type ErrorBoundary = {
+type ErrorBo = {
   children: any;
   onError?: () => void;
 };
 
-export default function ErrorBoundary(props: ErrorBoundary) {
+export default function ErrorBo(props: ErrorBo) {
   React.useEffect(() => {
     startReportingRuntimeErrors({ onError: props.onError });
     return () => {
       stopReportingRuntimeErrors();
     };
   }, []);
-  return <>{props.children}</>;
+  return <ErrorBoundary>{props.children}</ErrorBoundary>;
 }
